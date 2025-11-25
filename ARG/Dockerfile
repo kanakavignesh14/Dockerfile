@@ -1,8 +1,8 @@
 ARG VERSION
 FROM almalinux:${VERSION:-9}
-ARG COURSE = "DOCKER" \
-    TRAINER = "siva"
+ARG COURSE="DOCKER" \
+    TRAINER="SIVA"
 
-RUN echo "Trianer is ${TRAINER} and course is --> ${COURSE}"
+RUN echo "Trianer is ${TRAINER} and course is --> ${COURSE} AAND VERSION IS ${VERSION}"
 
 CMD ["sleep","1000"]
